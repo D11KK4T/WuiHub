@@ -1,37 +1,3 @@
---[[
-    ██╗    ██╗██╗   ██╗██╗██╗  ██╗██╗   ██╗██████╗ 
-    ██║    ██║██║   ██║██║██║  ██║██║   ██║██╔══██╗
-    ██║ █╗ ██║██║   ██║██║███████║██║   ██║██████╔╝
-    ██║███╗██║██║   ██║██║██╔══██║██║   ██║██╔══██╗
-    ╚███╔███╔╝╚██████╔╝██║██║  ██║╚██████╔╝██████╔╝
-     ╚══╝╚══╝  ╚═════╝ ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ 
-    
-    WuiHub v2.0
-    Developer  : Wui
-    GitHub     : https://github.com/D11KK4T/WuiHub
-    
-    Kullanım   : loadstring(game:HttpGet("https://raw.githubusercontent.com/D11KK4T/WuiHub/main/WuiHub.lua"))()
-]]
-
--- ==================== VERSİYON KONTROLÜ ====================
-local WUIHUB_VERSION = "2.0"
-local WUIHUB_AUTHOR  = "Wui"
-local WUIHUB_GITHUB  = "https://github.com/D11KK4T/WuiHub"
-
--- Executor uyumluluk kontrolü
-local function checkExecutor()
-    if not game or not game:GetService then
-        error("[WuiHub] Geçersiz ortam!")
-    end
-    -- request / http_request / syn.request desteği
-    if not (request or http_request or (syn and syn.request) or (http and http.request)) then
-        warn("[WuiHub] Uyarı: HTTP request fonksiyonu bulunamadı. Webhook çalışmayabilir.")
-    end
-end
-pcall(checkExecutor)
-
--- ==================== SCRIPT BAŞLANGIÇ ====================
-
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
