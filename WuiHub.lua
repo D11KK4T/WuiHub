@@ -10,7 +10,7 @@
     Developer  : Wui
     GitHub     : https://github.com/D11KK4T/WuiHub
     
-    Kullanım   : loadstring(game:HttpGet("https://raw.githubusercontent.com/D11KK4T/WuiHub/main/WuiHub.lua"))()
+    Kullanım   : loadstring(game:HttpGet("https://raw.githubusercontent.com/D11KK4T/WuiHub/refs/heads/main/WuiHub.lua"))()
 ]]
 
 -- ==================== VERSİYON KONTROLÜ ====================
